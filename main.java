@@ -5,25 +5,25 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int option;
 
-        while (option != 3) {
+        while (opcao != 3) {
             System.out.println("Menu:");
             System.out.println(" 1 - Calcular Preço Total");
             System.out.println(" 2 - Calcular Troco");
             System.out.println(" 3 - Sair");
             System.out.print("Escolha uma opção: ");
-            option = scanner.nextInt();
+            opcao = scanner.nextInt();
 
-            if (option ==1) {
+            if (opcao ==1) {
                     calcularPrecoTotal(scanner);
             }
-            else if (option == 2) {
+            else if (opcao == 2) {
                     calcularTroco(scanner);
             }
-            else if (option == 3) { 
+            else if (opcao == 3) { 
                     System.out.println("Saindo...");
             }
             else {
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opção inválida");
             }
         }
     
